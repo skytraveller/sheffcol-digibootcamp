@@ -1,0 +1,14 @@
+2
+Be able to use tools and techniques of an object oriented programming language
+ 
+Tools: e.g. predefined functions, screen templates.
+ 
+Techniques: using integrated development environment (IDE).
+ 
+Variables: global, local, static, overloaded results, instance.
+ 
+Assessment Criteria
+
+2.1
+Demonstrate use of object oriented tools and techniques.
+

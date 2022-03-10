@@ -1,0 +1,21 @@
+3
+Be able to design and develop an object oriented program to meet requirements.
+ 
+Classes: class diagram, dependencies and inheritances, identification attributes, methods, the control of scope of attributes and methods, inheritance, aggregation, association, polymorphism, pre-defined classes e.g. class library, downloaded, imported.
+ 
+Objects: e.g. constructors, destructors, building a program with reusable objects, defining relationships between objects, implementing message passing between objects.
+ 
+Creation of program: use of development environment, debugging, data validation, error handling and reporting.
+ 
+Programming language syntax: e.g. selecting, declaring and initialising variable and data structure types and sizes.
+ 
+Constructs: selection e.g. if … then … else, CASE, iteration e.g. while … do, repeat … until.
+ 
+Programming standards: e.g. use of comments, code layout, indentation.
+ 
+Assessment Criteria
+3.1
+Design an object oriented program.
+ 
+3.2
+Develop an object oriented program.

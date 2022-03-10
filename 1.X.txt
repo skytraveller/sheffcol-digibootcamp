@@ -1,0 +1,14 @@
+1.1 Explain the key features of object oriented programming.
+1.2 Explain the importance of encapsulation, inheritance and polymorphism in object oriented programming.
+
+Object orientated programming, also known as OOP, is a method of coding applications, complex or simple, in a much easier and smarter way by breaking down a problem in smaller bits and building a solution from them. The basis of this is to create a template by defining a class (a collection of properties and methods) and creating objects (or instances) from that class. Some of OOP's most important features include;
+
+1. Abstraction - Creating a high-level and simpler set of methods to use low level and more complicated code. An example is a keyboard or mouse. Catching each keydown and keyup event would require work to track it's state. In this instance, the on keypress event will catch both keyup and keydown and simplifies the low-lever code for us. This can be as simple as keeping a property in a class discrete and private to communicating with underlying hardware drivers behind the scenes.
+
+2. Encapsulation - Grouping variables and methods to create objects from class definitions. This allows us to group together common used methods and attributes or properties to create a class definition. This immensely helps keep code clean and modular and allows us to create objects from them.
+
+3. Inheritance - Creating a base class or template that can then be used or even extended as if it is the parent or base class. Multiple inheritance is possible with python. For instance, you could start by defining a base class called Transports with only a variable named numberofwheels and a default value of 0. From that, we could create Bikes and Cars with the default numberofwheels of 2 and 4, respectively. We could even go on to create Tricycles, inheriting from Bikes and make its default numberofwheels 3 and so on.
+
+4. Polymorphism - A way of completing a task using a previously defined methods but not knowing witch one will be executed at run-time. We create functions that complete a task in multiple ways but when executed, the function may complete the task differently depending on the data passed to it or even at random if that is the desired outcome. This is an incredibly powerful way in python to create a single function that handles multiple needed operations whereas in other languages, you may have to define a different function for each data type.
+
+More features include things such as being able to keep code private and discrete with in classes, modular code that can be re-used and updated much easier and selectively, letting the developer only focus on the needed parts and separating a big problem into smaller, easier, byte-size problems. 
