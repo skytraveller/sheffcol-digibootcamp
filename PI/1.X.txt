@@ -1,1 +1,3 @@
-explain the principles concepts of prgramming
+
+1.1 Explain the principles and concepts of programming languages.
+

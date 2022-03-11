@@ -14,3 +14,11 @@ Readability - As the creater of python said, "code is read a lot more than it is
 Maintainability - Combined with readability, your code should be broken down in parts easy to fix and/or update. It is your job to seperate the larger task into smaller tasks for exactly this.
 Scalable - While your project may start out as a single file, it could become something that needs multiple terabyes of code and date. Modular means easily extandable and upgradble.
 Reusable - While not all projects are built to be part of others, if code is reusable, you are severely reducing the time for your next project.
+
+
+
+
+Understand the importance of good programming practices.
+Common coding standards: open (free to apply own style for code), not limited for language constructs, can select any programming language.
+Organisational: common style guide for code, guide for language constructs, pre-determined programming language.
+Good programming practices: commenting, documentation (to keep a log of events), consistent indentation (shows logical structure), code grouping (grouping data so that the elements in each group share a common attribute), consistent naming (so that variables are easily identifiable), camel case, underscores, Don’t Repeat Yourself (DRY) principle (to reduce the amount of work required to extend and maintain the software in the future), programming refactoring (to improve non-functional attributes of software).
