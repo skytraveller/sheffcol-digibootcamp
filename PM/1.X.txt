@@ -1,0 +1,14 @@
+
+
+Conception and start up: project mandate, client requirements, and feasibility.
+
+Definition of the project: set up project team, create the Project Initiation Document (PID).
+
+Planning: timescales, costs, quality management, risk management and controls.
+
+Launch and execution: carrying out the plan, monitoring activity, checking progress.
+
+Closure: handover of the product, user acceptance testing, disbanding project team.
+
+Post-project evaluation: reviewing the project against success criteria.
+

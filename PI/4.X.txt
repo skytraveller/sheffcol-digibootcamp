@@ -1,6 +1,5 @@
 
-4.1
-Identify the types of functional and non-functional requirements.
+4.1 Identify the types of functional and non-functional requirements.
 Types of Non-functional Requirement :
 Scalability.
 Reliability.
@@ -12,9 +11,6 @@ Security.
 Manageability
 how the system must perform is your non-functional requirements of the system
 FUNCTIONAL Requirements:- How the system must work 
-
-4.2
-Describe the tests used for functional and non-functional requirements.
 
 
 
@@ -39,4 +35,7 @@ Response time
 Scalability
 Stability
 
+
+
+4.2 Describe the tests used for functional and non-functional requirements.
 
