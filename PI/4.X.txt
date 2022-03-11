@@ -1,0 +1,42 @@
+
+4.1
+Identify the types of functional and non-functional requirements.
+Types of Non-functional Requirement :
+Scalability.
+Reliability.
+Regulatory.
+Maintainability.
+Serviceability.
+Utility.
+Security.
+Manageability
+how the system must perform is your non-functional requirements of the system
+FUNCTIONAL Requirements:- How the system must work 
+
+4.2
+Describe the tests used for functional and non-functional requirements.
+
+
+
+
+
+
+Functional requirements describe ways a product must behave
+Functional requirements: calculations, technical details, data manipulation, data processing.
+Functional testing is based on the business requirement.
+
+Nonfunctional requirements, also known as quality attributes, describe the general software characteristics
+Non-functional requirements: accessibility, efficiency, reliability, scalability, maintainability, security, robustness.
+Non-functional testing is based on the performance requirement.
+Compliance
+Documentation
+Privacy
+Portability
+Quality
+Reliability
+Resilience
+Response time
+Scalability
+Stability
+
+
