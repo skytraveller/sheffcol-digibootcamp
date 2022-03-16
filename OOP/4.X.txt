@@ -1,18 +1,10 @@
-4
-Be able to test and document an object oriented program.
- 
-Testing: test strategy, test plan structure e.g. test, date, expected result, actual result, corrective action, error messages, specialist software tools e.g. debug.
- 
-Review: against specifications requirements, interim reviews.
- 
-Documentation: user guide, technical support.
- 
-Assessment Criteria
-4.1
-Test an object oriented program.
- 
-4.2
-Document appropriate action to correct errors.
- 
-4.3
-Create technical documentation for the support and maintenance of the program.
+
+4.1 Test an object oriented program.
+Using the program created in 3.X, I have compiled it on both windows and lixux and confirmed it works. I have also tested compiling it into a 32 and 64 bit executable. Running the problem always gives the expected result. 
+
+4.2 Document appropriate action to correct errors.
+Upon first compilation, I had forgotten to uncomment the TechStudent class. The compiler gave and error so I followed to where the error was found, using the breadcrumb navigation gcc prints and the start of the errors and uncommented the class. 
+
+4.3 Create technical documentation for the support and maintenance of the program.
+Please see the comments included in 3.X.cpp aswel as noting;
+User input should be added in the next update to create and set dynamically created student records. But, user data must ALWAYS be validated and never stored in such a way that it is loaded for execution.
