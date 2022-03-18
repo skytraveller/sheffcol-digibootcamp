@@ -1,19 +1,26 @@
 
-3.1
-Identify the elements of common coding standards.
+3.1 Identify the elements of common coding standards.
 
 Commenting - While code may be getting closer to natural languages, comments will break that final barrier and explain the more complex parts of your code.
-Optimizing - Each cycle the computer uses to process your code should be considered but mainly, the functions you write should do the job they are given with the least amount of extra input and memory used by variables or thier copies. While computers are powerful, they are still limited.
-Naming - Functions and variables should be name 'considerately'. Imagine someone else is going to read it. Unless there is very, very good documention or an IDE, navigating around a project with over 2000 files is impossible.
+Optimising - Each cycle the computer uses to process your code should be considered but mainly, the functions you write should do the job they are given with the least amount of extra input and memory used by variables or their copies. While computers are powerful, they are still limited.
+Naming - Functions and variables should be name 'considerately'. Imagine someone else is going to read it. Unless there is very, very good documentation or an IDE, navigating around a project with over 2000 files is impossible.
 
-3.2
-Explain the role and importance of good coding practices.
+3.2 Explain the role and importance of good coding practices.
 
-Security - Every application or piece of code must be written with security as it's priority. Act as if people will activly try and break your code. Insecure code can lean to the attacker using the entire machine in the worst scenarios. User input must be validated and should never be stored as it is. This WILL lead to exploits.
-Readability - As the creater of python said, "code is read a lot more than it is written". You're code will most likely last longer thna your job. Look after the people that come next.
-Maintainability - Combined with readability, your code should be broken down in parts easy to fix and/or update. It is your job to seperate the larger task into smaller tasks for exactly this.
-Scalable - While your project may start out as a single file, it could become something that needs multiple terabyes of code and date. Modular means easily extandable and upgradble.
+Security - Every application or piece of code must be written with security as it's priority. Act as if people will activity try and break your code. Insecure code can lean to the attacker using the entire machine in the worst scenarios. User input must be validated and should never be stored as it is. This WILL lead to exploits.
+Readability - As the creator of python said, "code is read a lot more than it is written". You're code will most likely last longer than your job. Look after the people that come next.
+Maintainability - Combined with readability, your code should be broken down in parts easy to fix and/or update. It is your job to separate the larger task into smaller tasks for exactly this.
+Scalable - While your project may start out as a single file, it could become something that needs multiple terabytes of code and data. Modular means easily extendable and upgradable.
 Reusable - While not all projects are built to be part of others, if code is reusable, you are severely reducing the time for your next project.
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,13 +1,12 @@
 1.1 Explain the key features of object oriented programming.
+1.2 Explain the importance of encapsulation, inheritance and polymorphism in object 
+oriented programming.
 
 Object orientated programming, also known as OOP, is a method of coding applications, 
 complex or simple, in a much easier and smarter way by breaking down a problem in smaller 
 bits and building a solution from them. The basis of this is to create a template by 
 defining a class (a collection of properties and methods) and creating objects 
 (or instances) from that class. Some of OOP's most important features include;
-
-1.2 Explain the importance of encapsulation, inheritance and polymorphism in object 
-oriented programming.
 
 Abstraction - Creating a high-level and simpler set of methods to use low level and more 
 complicated code. An example is a keyboard or mouse. Catching each keydown and keyup 

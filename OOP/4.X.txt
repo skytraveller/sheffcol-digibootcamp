@@ -1,9 +1,9 @@
 
 4.1 Test an object oriented program.
-Using the program created in 3.X, I have compiled it on both windows and lixux and confirmed it works. I have also tested compiling it into a 32 and 64 bit executable. Running the problem always gives the expected result. 
+Using the program created in 3.X, I have compiled it on both windows and lixux and confirmed it works. I have also tested compiling it into a 32 and 64 bit executable. Running the program on any platform or architecture always gives the expected result. 
 
 4.2 Document appropriate action to correct errors.
-Upon first compilation, I had forgotten to uncomment the TechStudent class. The compiler gave and error so I followed to where the error was found, using the breadcrumb navigation gcc prints and the start of the errors and uncommented the class. 
+Upon first compilation, I had forgotten to uncomment the TechStudent class. The compiler gave and error telling me it was undefined so I followed to where the error was found, using the breadcrumb navigation gcc prints and the start of the errors and uncommented the class. 
 
 4.3 Create technical documentation for the support and maintenance of the program.
 Please see the comments included in 3.X.cpp aswel as noting;
