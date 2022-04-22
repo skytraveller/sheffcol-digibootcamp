@@ -121,72 +121,39 @@ bobisnotfine1     Bad               Too many chars
 A9480758047       Good              Matches all criteria
 
 
-2.2 Develop a test plan in line with requirements
-2.3 Implement a test plan and record results
-2.4 Produce a test report
-
-
- 
-
- 
-
 2.2 Develop a test plan in line with requirements 
 
-Explain the stages of Test plan. Also You can make use of test plan 
-template  to demonstrate the testing process ( stages of it).  
-Explain with example(s) different test plan stages in real world scenario 
+My test plan is very simple. 
+
+  Objective - Ensure that my TulipCli application executes without error 
+  and gives the expected results.
+
+  Scope - The operations that need to be tested are create, read, update, 
+  delete, search and find. The argument parser doesn't need testing.
+
+  Strategy - Using python's unittests, any code added or modified will have 
+  it's own unittest. If the project grows much bigger, the results will 
+  be recorded in a database for review later. Due to this project being 
+  command-line based, less tests are needed. Intergrational and 
+  funtional tests will be the main ones used with a focus on security 
+  and stress testing.
+
+  Enviroment - The enviroment used to test this project is both a windows 
+  and linux test suite and both machines can run on x86 or x64 architecture.
+
 
 2.3 Implement a test plan and record results 
 
-Implement different use cases . In Use cases template you can mention 
-test cases, test data and expected results, resources and scheduling, 
-recording and checking of results (test log), evaluation. 
+I have implemented this test plan with my project TulipCli. All unittests can be 
+executed and give the expected results. Saving the results of these tests allowed
+me to review the outcome laters and also logged and problems as they came up.
+
 
 2.4 Produce a test report 
 
-You can Produce a Detailed Test Report if you want to where you can mention Test case id,  Test Description, Module name, Precondition(s), Post condition(s),Test Title, Test designed by , Test Executed by , Test Priority (Low, Medium , High), Test Designed date, Test Steps, Test Data ,  Expected results, Actual results, Pass/Fail,  Corrective action taken 
-
- 
-
-You can put them in a template  . 
-
- 
-
-ADDITIONAL GUIDANCE TO SOLVE ASSESSMENT 2.1,2.2,2.3 &2.4 
-
-Test data: normal, erroneous, extreme (outside limits), 
-learners need to understand the importance of designing 
-test data to confirm a program works correctly under normal 
-and exceptional circumstances (valid, invalid, boundary). 
-
-Test plan should include: test specification (including functional and 
-structural techniques, setting minimum criteria for completion; functional 
-e.g. black box testing, structural e.g. white box testing), test cases, 
-test data and expected results, resources and scheduling, recording and 
-checking of results (test log), evaluation. 
-
-Test process: test specification; test cases; test data; expected results; 
-resources required; time plan; recording documentation; evaluation of results 
-
-Test cases: expected outputs from specified inputs; formal e.g. positive, 
-negative testing; informal e.g. scenario testing. 
-
-Test report should specify the presence or absence of errors, make proposals 
-for rectifying errors found and report on the success of the test against 
-the original specification, contents e.g. test plan, test specification, 
-test cases, test procedure specification, test log/records, test incident 
-report (actual v expected result) 
-
-Record results: test e.g. branch test, test data, expected result, actual 
-result, corrective action taken. 
-
-
-
-
-
-
-
-
-
-
+You can Produce a Detailed Test Report if you want to where you can mention 
+Test case id, Test Description, Module name, Precondition(s), Post condition(s),
+Test Title, Test designed by , Test Executed by , Test Priority (Low, Medium, 
+High), Test Designed date, Test Steps, Test Data, 
+Expected results, Actual results, Pass/Fail,  Corrective action taken 
 

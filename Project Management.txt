@@ -89,9 +89,6 @@ Carry out a post-project review to determine project outcomes.
 
 
 
-
-
-
 Conception and start up: project mandate, client requirements, and feasibility.
 
 Definition of the project: set up project team, create the Project Initiation Document (PID).
