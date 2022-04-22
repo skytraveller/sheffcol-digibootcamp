@@ -1,0 +1,192 @@
+
+1 Understand software testing
+
+1.1 Explain the purpose and methods of software testing
+
+Software testing is the process of checking that your program works 
+as expected, given different situations. The purpose of this has many 
+reasons behind it but probably the most important is to create software 
+that is realiable and secure. Without these many different kinds of 
+tests, your program may not work but also may open the end-user's computer 
+to remote control or even irrecoverable damage. 
+
+Testing can be split into two main types, automated and manual. Automated 
+testing is executed by the machine. This can be when an event as happened 
+like the software being compiled, a certain milestone hit or at random/set 
+times. Automatic tests can be simple or very complex and the results are 
+logged for review. On the other hand, manual testings is completed by a 
+person, usually the develop first and later, a select group of testers. 
+Manual testing requires a lot of time and effort from people to complete 
+compared to automated testing and could be considered less thourough than 
+automated testing. However, manual testing will often find problems that 
+pre-written scripts are simply not looking for.
+
+
+1.2 Describe the different stages and types of software testing
+
+Different tests are better suited for differenct stages of a projects 
+lifecycle. User tests are impossible to complete meaningfully if your 
+project has implemented a method of the use communicating with your 
+application yet. While in early development, unit tests are perfect for 
+testing small pieces of code as you add them and if used correctly, will 
+continue to test each piece of code as your project grows. 
+
+As these smaller pieces build up and development starts create something 
+tangable, intergration tests will start to become more and more useful. 
+Leading the way for functional tests to further ensure the results are correct. 
+
+At a later stage in your project, you may even have human testers trying to 
+find problems with the front-end of your software. Different tests are more 
+or less useful at different stsages of the development cycle.
+
+Different types of software tests includes;
+
+Unit - Unit tests are the smallest and used to test individual functions, 
+methods and/or classes. They are incredibly easy to automate and most 
+compilers, iteractive development enviroments and project management 
+software can help implement these directly into your project.
+
+Intergration - Intergration tests check that the smallest pieces of your 
+code work correctly together. These tests are more complicated than unit 
+tests due to them having more parts. They can also be easily automated 
+and cover a larger section of your code base while still staying relatively 
+simple.
+
+Functional - Functional testing is very similiar to intergration testing 
+however, functional testing focuses much more on the results from pieces of 
+code that do work together. Primarially that the result is as expected even 
+if given unexpected data or parameters.
+
+Performance - Performance testing ensures the software can handle different 
+amounts of work and that it is not effected over time. The most common method 
+is stress-testing. Forcing the software to work under extreme loads and 
+helping find bottle-necks or problems. 
+
+
+1.3 Explain how automation is used in software testing
+
+Automation is used in software testing to decrease the time needed to create 
+and deploy tests of different kinds and also the time needed to find any 
+common problems that may occur. It is very helpful and also used to check if 
+an update or modification of your current code has had adverse effects. 
+Combining tests with automation allows for the code to be tested every time 
+it is compiled, released, even daily, something that would take 00's of hours 
+for a person to complete and then report. 
+
+Git, a version control system, has many ways to implement this tests. Using 
+simple git hooks, it is very easy to run a unit test or script when an event 
+happens. Another feature of some git services is pipelines. These can be used 
+to compile, run and test your project automatically, at a certain time or when 
+an update to the code base has been made. The reports given from pipeline tests 
+can viewed live and even included on your projects homepage.
+
+Python has a unit testing module as part of the standard called PyUnit. This 
+incredibly easy-to-use tool can be used to create and run tests by creating a 
+python script containing a python class derived from the TestCase class. 
+
+
+1.4 Describe functional and structural testing
+
+Functional - Functional testing is when we test how the software works 
+given specified test data. This can be to check it gives the correct result 
+or that it handles incorrect data gracefully.
+
+Structural - Structural testing focuses on how code creates it's result. 
+Instead of checking the result is correct, it looks at the flow of 
+control. This is to ensure that conditional testing is correctly used and 
+that the structure follows the correct path of execution. 
+
+
+2 Be able to develop and implement a test plan
+
+2.1 Design appropriate test data
+
+When creating test data, the data must be both valid and invalid. Testing 
+both, to an extreme length, is required for the test to be worth doing. The 
+objective could be considered as trying to break or bore your program.
+In this example, we will be testing the data given when a user is asked to 
+login. We would expect a username and validate it is correct and safe to 
+processed and then be stored. The username must be between 4 and 12 chars long, contain 
+at least, one letter, one number and no symbols.
+
+Username;
+Data            Bad or Good         Reason
+bob               Bad               Too short, no numbers
+bobiscool!        Bad               Contains a symbol
+b0b??             Bad               Contains 2 symbols
+bobisfine1        Good              Matches all criteria
+b1b1s1i1e1        Good              Matches all criteria
+bobisnotfine1     Bad               Too many chars
+59480758047       Bad               No letters
+A9480758047       Good              Matches all criteria
+
+
+2.2 Develop a test plan in line with requirements
+2.3 Implement a test plan and record results
+2.4 Produce a test report
+
+
+ 
+
+ 
+
+2.2 Develop a test plan in line with requirements 
+
+Explain the stages of Test plan. Also You can make use of test plan 
+template  to demonstrate the testing process ( stages of it).  
+Explain with example(s) different test plan stages in real world scenario 
+
+2.3 Implement a test plan and record results 
+
+Implement different use cases . In Use cases template you can mention 
+test cases, test data and expected results, resources and scheduling, 
+recording and checking of results (test log), evaluation. 
+
+2.4 Produce a test report 
+
+You can Produce a Detailed Test Report if you want to where you can mention Test case id,  Test Description, Module name, Precondition(s), Post condition(s),Test Title, Test designed by , Test Executed by , Test Priority (Low, Medium , High), Test Designed date, Test Steps, Test Data ,  Expected results, Actual results, Pass/Fail,  Corrective action taken 
+
+ 
+
+You can put them in a template  . 
+
+ 
+
+ADDITIONAL GUIDANCE TO SOLVE ASSESSMENT 2.1,2.2,2.3 &2.4 
+
+Test data: normal, erroneous, extreme (outside limits), 
+learners need to understand the importance of designing 
+test data to confirm a program works correctly under normal 
+and exceptional circumstances (valid, invalid, boundary). 
+
+Test plan should include: test specification (including functional and 
+structural techniques, setting minimum criteria for completion; functional 
+e.g. black box testing, structural e.g. white box testing), test cases, 
+test data and expected results, resources and scheduling, recording and 
+checking of results (test log), evaluation. 
+
+Test process: test specification; test cases; test data; expected results; 
+resources required; time plan; recording documentation; evaluation of results 
+
+Test cases: expected outputs from specified inputs; formal e.g. positive, 
+negative testing; informal e.g. scenario testing. 
+
+Test report should specify the presence or absence of errors, make proposals 
+for rectifying errors found and report on the success of the test against 
+the original specification, contents e.g. test plan, test specification, 
+test cases, test procedure specification, test log/records, test incident 
+report (actual v expected result) 
+
+Record results: test e.g. branch test, test data, expected result, actual 
+result, corrective action taken. 
+
+
+
+
+
+
+
+
+
+
+

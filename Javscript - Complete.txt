@@ -1,0 +1,168 @@
+1.1 Explain how JavaScript is used as a web programming language.
+
+JavaScript is a programming language that powers the dynamic behaviour on 
+most websites. Alongside HTML and CSS, it is a core technology that 
+helps make websites dynamic. It can be used for both front-end and back-end 
+development. Javascript is used to tell the client, a web browser, 
+to create, move and update the page, without needing to load webpage without 
+requesting further instructions. It would be difficult to find a modern website 
+that doesn't use javascript. Creating your own is easy but there are many, many 
+frameworks others have already built like JQuery. 
+
+Doing it yourself or using frameworks like JQuery to modify your webpage, 
+could be anything as simple as an 'alert' once the page has been loaded or animating 
+various aspects of the user interface. On the other hand Jacvascript can be used 
+to create incredibly complex, complete and event-driven websites. Allowing 
+for incredible graphical possibilites from simple animation to an almost flash-like, 
+interactive experience.  
+
+
+2.1 Use JavaScript to prompt and validate inputs in web pages.
+
+<script type="text/javascript">
+function promptForName() 
+{
+    var name = prompt("Please enter your name");
+    // Ask the user for input
+    if (name != null)
+    {
+        // Validate the input
+        if (name == "") { return "A blank name is invalid." }
+        elif (name.length > 42) { return "The name is too long." }
+        return "Welcome to the end of the game " + name + ".";
+    }
+}
+
+alert(promptForName());
+// Show a pop up after the user's name has been given
+
+</script>
+
+
+2.2 Use document.write to display messages in web pages.
+
+<script type="text/javascript">
+
+function writeToPage(var msg)
+{
+    document.write(msg);
+}
+writeToPage("Repeat after me; I am free.\n");
+
+</script>
+
+
+2.3 Alter, show, hide and move objects in web pages.
+
+<script type="text/javascript">
+
+function toggleVisible(eleid, st="block")
+{
+    var ele = document.getElementById(eleid);
+    /* Get the element from the document by the id given
+    and change it's display style depending on it's current state */
+    if (ele.style.display == st)
+    {
+        ele.style.display = "none";
+    }
+    else if (ele.style.display == "none")
+    {
+        ele.style.display = st;
+    }
+    else
+    {
+        ele.style.display = "none";
+    }
+}
+
+toggleVisible("content");
+// Toggle the visibility of the element with the id 'content'
+
+</script>
+
+
+2.4 Use JavaScript to include special effects in web pages.
+
+<script type="text/javascript">
+
+function moveElement(eleid)
+{
+    var ele = document.getElementById(eleid);
+    // Find the element by id
+    var pos = 0;
+    // Create a variable to hold the 'position' value
+
+    function frame()
+    {
+        if (pos == 350)
+        {
+            clearInterval(id);
+        }
+        else
+        {
+            ele.style.left = pos++ + 'px';
+            // Increase the 'position' variable and set the elements new position
+        }
+    }
+
+    id = setInterval(frame, 10);
+    // Create a timer to call the frame function every 10ms
+
+}
+
+moveElement("apps");
+// Start the moveElement effect on the 'apps' element
+
+</script>
+
+
+2.5 Use functions and variables to customise web pages.
+
+<script type="text/javascript">
+
+function changeTheme(fore, back)
+{
+    document.body.style.foregroundColor = fore;
+    document.body.style.backgroundColor = back;
+}
+
+changeTheme("white", "yellow");
+// Change the document's background and foreground colours
+
+</script>
+
+
+2.6 Use functions and variables for functional web pages.
+
+<script type="text/javascript">
+
+function updateClock()
+{
+    var now = new Date();
+    // Get the current date and time using a Date() object
+    document.getElementById('apps').innerHTML = [
+        now.getDate(), 
+        now.getMonth(),
+        now.getFullYear()
+    ].join('/') + " " + [
+        ("00" + now.getHours()).substr(-2, 2),
+        ("00" + now.getMinutes()).substr(-2, 2)
+    ].join(':');
+    // Set the 'apps' element's innet html to the formatted date and time
+}
+
+setInterval(updateClock, 60000);
+// Create a time to update a clock with the correct time every minute
+
+</script>
+
+
+2.7 Use event handlers to trigger JavaScript code.
+
+<body onload="javascript:return alert('This web page has finished loading!')"> 
+  <a href="/somelink" onclick="javascript:return confirm('This is the onclick event being handled. Are you sure?');" style="text-align: center;">
+</body>
+<!-- A small example of the 'onload' event to show a pop up when the page has finished loading
+and also the 'onclick' event to ask the user to confirm that they want to continue -->
+
+
