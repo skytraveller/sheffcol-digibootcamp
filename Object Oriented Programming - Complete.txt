@@ -1,0 +1,292 @@
+
+1.1 Explain the key features of object oriented programming.
+1.2 Explain the importance of encapsulation, inheritance and polymorphism in object  oriented
+programming.
+
+Object orientated programming, also known as OOP, is a method, or paradigm, of
+coding applications,  complex or simple, in a much easier and smarter way by
+breaking down a problem in smaller  bits and building a solution from them. The
+basis of this is to create a template by  defining a class (a collection of
+properties and methods) and creating objects  (or instances) from that class.
+How this is used varies on the language, for example;
+
+
+// C++
+class Student
+{
+    public:
+        int age = 0;
+        string name = "";
+};
+
+class ArtStudent: public Student { };
+
+class TechStudent: public Student { };
+
+
+# Python
+class Student:
+    age = 0
+    name = ""
+
+class ArtStudent(Student):
+    pass
+
+class TechStudent(Student):
+    pass
+
+
+Some of OOP's most important features include;
+
+Abstraction - Creating a high-level and simpler set of methods to use low level
+and more complicated code. An example is a keyboard or mouse. Catching each
+keydown and keyup event would require work to track it's state. In this
+instance, the on keypress event will catch both keyup and keydown and
+simplifies the low-lever code for us. This can be as simple as keeping a
+property in a class discrete and private to communicating with underlying
+hardware drivers behind the scenes.
+
+Encapsulation - Grouping variables and
+methods to create objects from class definitions. This allows us to group
+together common used methods and attributes or properties to create a class
+definition. This immensely helps keep code clean and modular and allows us to
+create objects from them.
+
+Inheritance - Creating a base class or template that
+can then be used or even extended as if it is the parent or base class.
+Multiple inheritance is possible with python. For instance, you could start by
+defining a base class called Transports with only a variable named
+numberofwheels and a default value of 0. From that, we could create Bikes and
+Cars with the default numberofwheels of 2 and 4, respectively. We could even go
+on to create Tricycles, inheriting from Bikes and make its default
+numberofwheels 3 and so on.
+
+Polymorphism - A way of completing a task using a
+previously defined methods but not knowing witch one will be executed at
+run-time. We create functions that complete a task in multiple ways but when
+executed, the function may complete the task differently depending on the data
+passed to it or even at random if that is the desired outcome. This is an
+incredibly powerful way in python to create a single function that handles 
+multiple needed operations whereas in other languages, you may have to define a
+different function for each data type.
+
+More features include things such as being able to keep code private and
+discrete with in classes, creating modular code that can be re-used and updated
+much easier and selectively, letting the developer only focus on the needed
+parts and separating a big problem into smaller, easier, byte-size problems. 
+
+
+2.1 Demonstrate use of object oriented tools and techniques.
+
+Templating and using inheritence is my favorite tool of OOP. I use these tools
+in nearly every project I create. One of the very first things I commonly do is
+to create base classes for objects with default properties and functions they
+need and extend them as needed. This speeds up development by an unimaginable
+amount of time. Another common practice for me is to create or use frameworks
+with even more standard defined classes and functions. Another core concept is
+abstraction is grouping variables and/or properties
+
+See 1.2 for an example of inheritance.
+
+An example of encapsulation is as follows;
+
+// C++
+int studentlukeage = 0;
+string studentlukename = "";
+int studentbobage = 0;
+string studentbobname = "";
+
+class Student
+{
+    public:
+        int age = 0;
+        string name = "";
+};
+
+Student luke = Student();
+luke.name = "luke";
+Student bob = Student();
+bob.name = "bob";
+
+# Python
+class vehicle:
+    numberOfWheels = 0
+    def move(self, distance):
+        pass
+
+class boat(vehicle):
+    pass
+
+class car(vehicle):
+    numberOfWheels = 4
+    def honkhorn(self, distance):
+        pass
+
+
+3.1 Design an object oriented program.
+
+I am going to create a simple program to create a record of a student that shows
+how old they are and how many courses they are enrolled in. I will do this by
+creating a class with the mentioned properties and common methods to used by
+different types of students. Different types of students with be created by
+inheriting a base class. Later updates will add user input to dynamically create
+students and add them to a database.
+
+ 
+3.2 Develop an object oriented program.
+
+/*
+
+This program is a very simple example of OOP programming to create and print simple student records.
+
+gcc 3.X.cpp -lstdc++
+
+*/
+
+#include <iostream> 
+
+using namespace std;
+
+class Student
+{
+    /*
+        Student - The base class used in this program.
+
+        This class uses the private variables: name, type, age and numberofcourses with getters and setters.
+        This class can be printed using the 'print' function.
+    */
+
+    public:
+
+        Student()
+        {
+            // This blank method is needed so this class and derived classes can handle being initiated without an argument.
+            // cout <<  "Student created!\n";
+        }
+        Student(string namevar)
+        {
+            setName(namevar);
+        }
+
+        // ~Student()
+        // {
+            // This method has been commented out due to not being needed, yet.
+            // cout <<  "Student destroyed!\n";
+        // }
+
+        int getAge(void)
+        {
+            return age;
+        }
+        void setAge(int v)
+        {
+            age = v;
+        }
+
+        string getName(void)
+        {
+            return name;
+        }
+        void setName(string v)
+        {
+            name = v;
+        }
+
+        int getNumberOfCourses(void)
+        {
+            return numberofcourses;
+        }
+        void setNumberOfCourses(int v)
+        {
+            numberofcourses = v;
+        }
+
+        void print()
+        {
+            cout << "Student: " << getName() << endl;
+            cout << getAge() << " years old, currently taking " << getNumberOfCourses() << " course(s)." << endl;
+        }
+
+        void set(string nme, int age, int noc)
+        {
+            if (nme != "")
+            {
+                setName(nme);
+            }
+            setAge(age);
+            setNumberOfCourses(noc);
+        }
+
+    private:
+        int age = 0;
+        int numberofcourses = 0;
+        string name = "";
+        string type = "";
+};
+
+class ArtStudent: public Student
+{
+    private:
+        string type = "art";
+};
+
+class TechStudent: public Student
+{
+    private:
+        string type = "tech";
+};
+
+int main()
+{
+    // Create a student, set it's properties, print to screen, repeat.
+
+    Student luke("Luke");
+    luke.setAge(21);
+    luke.setNumberOfCourses(1);
+    luke.print();
+
+    ArtStudent bob;
+    bob.set("bob", 29, 2);
+    bob.print();
+
+    TechStudent john;
+    john.set("john", 28, 4);
+    john.print();
+
+    return 0;
+    
+}
+
+
+4.1 Test an object oriented program.
+Using the program created in 3.X, I have compiled it on both windows and lixux
+and confirmed it compiles without error. I have also tested compiling it into a
+32 and 64 bit executable. Compilining, executining and watching for the results
+on any platform or architecture always gives the expected result.
+While creating the program, I also tested it after adding new pieces of code I
+had created, changing the value of variables, even to purposely invalid values
+sometimes, to see if it still gives the correct result when compiled and executed.
+
+4.2 Document appropriate action to correct errors.
+Upon first compilation, I had forgotten to uncomment the TechStudent class. The
+compiler gave an undefined error telling me the code it was looking for didn't exist
+yet so I followed to where the error was found, using the breadcrumb navigation gcc
+prints and the start of the errors and uncommented the class. After recompiling,
+the new program, with the code I called actually being included, the program
+executed without problem.
+Later, I was given a syntax error. In the same fashion, I hunted down the problem
+and found I had forgot a semi-colon. Adding one fixed the problem instantly and
+the compiler could now again read the source code with running into something
+it couldn't understand.
+
+4.3 Create technical documentation for the support and maintenance of the program.
+Please see the comments included in 3.X. I have used these comments to document
+what the program actually does and how it goes about doing so. These comments also
+document what objects are being created and how they are to be used. Technical
+doumentation, be it in comments, a readme file or even a whole wiki helps explain
+your code to other users and speeds up thier development time as they don't have
+to learn the entire code base themselves. Aswel as this, it should be noted;
+User input should be added in the next update to create and set dynamically
+created student records. But, user data must ALWAYS be validated and never stored
+in such a way that it is loaded for execution.
+

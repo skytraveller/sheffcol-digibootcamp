@@ -1,0 +1,202 @@
+1.1 Explain the principles and concepts of programming languages.
+
+Programming languages are specially defined languages used to translate 
+human readable text into machine code that a device can read and execute. 
+There are thousands of different languages availible today and more are 
+being created as we speak. They range from very simple, almost 'standard' 
+English using simple objects to incredibly complex, difficult-to-read and 
+huge projects. Many of these languages can belong to different paradigms. 
+In this context, a paradigm is a set of basic rules, concepts and methods 
+for how the language is used. Imperative programming, also known as 
+procederal, is how languages like ASM and C work. Blocks of memory are given 
+names and these variables are used in a step-by-step fasion, writing, reading, 
+copying, comparing and deleting this blocks of addressed memory. Another, 
+very popular, way of coding, for it's speed and simplicity, is known as 
+Object-orientated Programming. It is similiar to imperitive programming, 
+however, variables and common methods are ogrinised into class objects. 
+Defining a common class object with the commonly needed methods combined 
+with other classes inheriting this properties allows for much faster development 
+and a layer of access control to created objects. 
+
+
+2.1 Interpret variables within programming languages.
+
+Variables are, most commonly, 3 things;
+Name - Something you call the variable so you can use it
+Address - The address of the where the variable data is stored
+Value - The data stored within the variable
+
+Aswel as this, variables can be of different types. Some languages, 
+variables can be anything and treated as such. In others, variables must be 
+defined by type too. Common types include char, int, double, float and 
+arrays. A type-defined variable will allow the computer to process, store 
+and read the variable in more appropiate ways.
+
+
+2.2 Interpret common programming control structures that are used when 
+developing code.
+
+Control structures are how we control the flow of control in programs. 
+Every thing we code is executed in sequence until we and conditional logic. 
+The most common example is the 'if' statement and can be extended to become 
+an 'if-else' statement. 'While' statements can be used to repeat an action 
+until a condition is met and 'for loops' allow you to iterate over data. 
+With these being combinable and nestable, intensly complex routes though 
+huge code bases can soon become just the basic operation of your program. 
+Keywords like break and continue are ways we can exit loops we create. 
+A simple example is below.
+
+// C
+if (x == y)
+{
+  if (x == 1)
+  {
+    // Do something
+  }
+  else
+  {
+
+  }
+}
+
+# Python
+if x is y:
+  while x is y:
+    x += 1
+    break
+  while 1 == 0:
+    continue
+else:
+  for a in b:
+    x += 1
+
+
+2.3 Describe the use of common data structures.
+
+Array - An array is a fixed-size block of memory that can hold multiple of 
+the same type of type. This can be an array of integers, bytes, strings, 
+even more arrays.
+
+List - A list can be treated like a dynamically resizing array. While each 
+item in the array is it's own node with it's own memory, it also holds the 
+address to the node that comes before and the node that comes after. These 
+can be singly linked (one directional traversal), doubly linked 
+(bi-directional traversal) or circular (with the last item referring the 
+the first as it's next item)
+
+Stack - A stack is a Last In First Out structure that is again like an 
+array however you access and set the elements using 'pop' and 'push' methods. 
+Popping an element removes the last element that was added. Pushing an item 
+adds it to the stack.
+
+Queue - A stack is a First In First Out structure that is the same as a 
+stack but backwards. Popping an element removes the first element that was 
+added. Pushing an item adds it to the queue.
+
+
+2.4 Describe how algorithms are used in programming.
+
+Algorithms are used in programming to correctly, quickly and safely process 
+data in certain way according to the data and the required result. They 
+represent a set of rules and can be very simple to incredibly complex. This 
+can range from how to print a string to how to search through data for strings 
+and everything inbetween.
+
+
+2.5 Describe how to test and debug programs.
+
+The best way to test and debug programs is to run them on as many different 
+machines you can get your hands on, record all the results, successes and 
+failures, crashes and problems and work throgh them one by one. When this is 
+done, try and break your program. More than test it, prepare it for utter savagry. 
+Compilers ofter give very detailed error messages and links to documentaion 
+to hunt down anything not as obvious as you'd like. Interactive Develpment 
+Enviroments use debugger to attach to the program at runtime, allowing for 
+live inspection of variables and functions. Breakpoints can be used to halt 
+execution whenever needed. A very time-consuming and manual way to debug problems is to 
+use print statements and logging results to the console at certain points of 
+execution.
+
+
+3.1 Identify the elements of common coding standards.
+
+Commenting - While code may be getting closer to natural languages, comments 
+will break that final barrier and explain the more complex parts of your code.
+
+Optimising - Each cycle the computer uses to process your code should be 
+considered but mainly, the functions you write should do the job they are 
+given with the least amount of extra input and memory used by variables or 
+their copies. While computers are powerful, they are still limited.
+
+Naming - Functions and variables should be name 'considerately'. Imagine 
+someone else is going to read it. Unless there is very, very good documentation 
+or an IDE, navigating around a project with over 200 files is next to impossible 
+without help.
+
+
+3.2 Explain the role and importance of good coding practices.
+
+Security - Every application or piece of code should be written with security 
+as it's priority. Act as if people will activity try and break your code. 
+Insecure code can lean to the attacker using the entire machine in the worst 
+scenarios. User input must be validated and should never be stored as it is. 
+This will lead to exploits, possibley even leading to a remote user given full 
+access to your machine.
+
+Readability - As the creator of python said, "code is read a lot more than 
+it is written". You're code will most likely last longer than your job. 
+Look after the people that come next.
+
+Maintainability - Combined with readability, your code should be broken down 
+in parts easy to fix and/or update. It is your job to separate the larger 
+tasks into smaller tasks for exactly this.
+
+Scalable - While your project may start out as a single file, it could 
+become something that needs multiple terabytes of code and data. Modular code 
+means easily extendable and upgradable.
+
+Reusable - While not all projects are built to be part of others, if code is 
+reusable, you are severely reducing the time for your next project.
+
+
+4.1 Identify the types of functional and non-functional requirements.
+
+Non-functional requirements, those that are based on the performance side of things, 
+includes accessibility, maintainability, manageability, reliability, scalability, 
+security and serviceability.
+
+Functional requirements, those that are based on the business side of things, 
+includes data manipulation and processing, deployable to the target machines, 
+documentation and must use secure and efficient practices.
+
+
+4.2 Describe the tests used for functional and non-functional requirements.
+
+Functional testing includes;
+  Unit testing - Testing each module indiviually and looking for problems yourself. 
+  This is a great testing method that finds problems very easy and pinpoints what 
+  module is causing the problem.
+
+  Integration testing - While similiar to unit testing, integration testing will 
+  test a collection of modules and confirm they work together seamlessly.
+
+  System testing - This is black-box testing. When system testing we are making 
+  sure the entire projects works on different computer systems, focusing on 
+  usability and load-testing.
+
+Non-functional testing includes;
+  Availability testing - Testing how many problems, how often they become a 
+  problem and how long it takes to fix and recover from it.
+
+  Compatibility testing - Checking that your program or website works in the 
+  exact way you want it to on different platforms. This could be operating systems 
+  or programs like web browsers.
+
+  Configuration testing - Changing the date or time on a machine can play havoc 
+  with network code as time-stamped packets will be processed in the wrong order. 
+  Changing the configuration to incorrect values intentionally will help find these 
+  problems before the user suffers from it. This is also used to test hardware configurations.
+
+  Load testing - Checking if your program can handle and perform well under 
+  real-life or extreme loads.
+
