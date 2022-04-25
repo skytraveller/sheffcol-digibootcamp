@@ -2,51 +2,88 @@
 1 Understand the principles of project management and the methodologies used by 
 organisations to manage IT projects.
 
-1.1 Explain the stages of the project lifecycle as they apply to a given IT 
-project.
+  1.1 Explain the stages of the project lifecycle as they apply to a given IT 
+  project.
 
-  Initiation - In this stage, you must create a well-defined plan from your idea. 
-  Create a business plan, laying out why your idea is the solution for a 
-  given problem. Confirm you have the resources and that bring your idea into 
-  reality is viable and realistic. Document and clear set of goals and methods 
-  you're going complete and use to create your project.
+    Initiation - In this stage, you must create a well-defined plan from your idea. 
+    Create a business plan, laying out why your idea is the solution for a 
+    given problem. Confirm you have the resources and that bring your idea into 
+    reality is viable and realistic. Document and clear set of goals and methods 
+    you're going complete and use to create your project.
 
-  Planning - Create a timelime and define when you'll complete different tasks 
-  to complete your goal. Establish what resources you have and what you will 
-  need at different stages. Ensure 3rd parties and communcation is ready for 
-  when you need them and also can handle how much you need them. Break down 
-  problems into managable tasks.
+    Planning - Create a timelime and define when you'll complete different tasks 
+    to complete your goal. Establish what resources you have and what you will 
+    need at different stages. Ensure 3rd parties and communcation is ready for 
+    when you need them and also can handle how much you need them. Break down 
+    problems into managable tasks.
 
-  Execution - Start executing your plan. Contact or even meet people, delegate 
-  tasks if required and begin creating tangible things from the tasks given.
+    Execution - Start executing your plan. Contact or even meet people, delegate 
+    tasks if required and begin creating tangible things from the tasks given.
 
-  Control - Manage ongoing tasks while keeping track of the expected timeline. 
-  Results should be similiar to the expected results, including ensure all 
-  included groups are keeping to the budget. Ensure all parties have the 
-  required resources and tools.
+    Control - Manage ongoing tasks while keeping track of the expected timeline. 
+    Results should be similiar to the expected results, including ensure all 
+    included groups are keeping to the budget. Ensure all parties have the 
+    required resources and tools.
 
-  Closure - Get feedback from all parties that helped create your project, 
-  on every task that was completed, before getting feedback from the 
-  client. You may have to modify or revise certain aspects so this stage 
-  can be repeated until final completion.
+    Closure - Get feedback from all parties that helped create your project, 
+    on every task that was completed, before getting feedback from the 
+    client. You may have to modify or revise certain aspects so this stage 
+    can be repeated until final completion.
 
-1.2 Describe key concepts, issues and risks when managing IT projects.
+  1.2 Describe key concepts, issues and risks when managing IT projects.
+
+    Security - Leaving your company or customers open to further exploits or 
+      problems leaves you liable and will destroy your project (and probably) 
+      company before you can begin.
+    Budget - A cost of what is needed should be carefully planned before any 
+      start is made and it is key to keep to this limit. Without the resources 
+      needed, the project cannot be completed.
+    Time - Breaking down a project into managable tasks with clear objectives 
+      and a set amount of time for completion is key for finishing your project 
+      on time. The longer somethings takes, usually, the more it costs. Resources 
+      are limited.
 
 
-1.3 Compare the characteristics of different project management methodologies used by organisations.
+  1.3 Compare the characteristics of different project management methodologies 
+  used by organisations.
+
+    Adaptive - My preffered method, the only constants are the budget and 
+      timeframe. The management of a project changes as circumstances change to 
+      maximize output.
+    Agile - Agile development is based on small tasks being completed quickly. 
+      Control of the project is loose and delivery of results are often with a 
+      focus on real-time communication between members of the team.
+    Rapid - This method focus on developing high quality products in a fast way. 
+      Modules of code created is re-use to speed up completion and communication is
+      done in a very informal way.
+    Scrum - A common methodoligy, with a heavy focus on removing any problems,
+      allowing the team to reach it's full potential and complete tasks in the 
+      most easy way possible. Scrum projects are managed by a Scrum master.
 
 
 2 Be able to use project management software to plan an IT project.
 
-2.1 Produce a project specification for an IT project in line with requirements.
+  2.1 Produce a project specification for an IT project in line with requirements.
 
+  2.2 Use project management software to plan an IT project.
 
-2.2 Use project management software to plan an IT project.
+    For this I used Trello. My project is small so the plan was also small, laying 
+    out and making clear what the objectives. First, I created a rough draft of 
+    my project, then following my project plan, intergated git and visual code 
+    support, finishing a first version and finally finishing the documentation 
+    before release. The screenshot PM - plan.jpg shows my simple goals.
 
 
 3 Be able to use project management software to monitor and review an IT project.
 
-3.1 Use project management software to monitor a project plan and track progress against the plan.
+  3.1 Use project management software to monitor a project plan and track progress against the plan.
+
+    By combining Git, Trello and Visual Code with extentions, when changes are made 
+    to my project, the unittests are executed, giving me the status of key parts 
+    of my code so I can check againt the plan on Trello and cross off completed 
+    tasks as they happen. Git hooks have also allowed me to test my code on 
+    different operation systems and automated tests with git hooks when Visual Code 
+    wasn't availible.
 
 
 3.2 Carry out a post-project review to determine project outcomes.
@@ -56,56 +93,4 @@ project.
 Reference(s);
 https://kissflow.com/project/stages-of-project-management/
 https://www.teamwork.com/blog/project-life-cycle/
-
-
-
-
-
-
-
-
-
-
-
-1.1 Explain the stages of the project lifecycle as they apply to a given IT project.
-Idea - All things start from an idea.
-Planning - The idea needs to be broken down and wrote so you have something to work from and can better manage your time.
-Preparing - You may need 3rd party software or licences, translations or graphic design first. You'll also most likely need a certain set of tools to build your project and these may also need configuring.
-Creating - Start actually building key components of your project and putting them together.
-Debugging - Test your code. Try to break it. Prepare for anything, not everyone who uses your code with have the intention of using it how it was designed. It is key that you test for security exploits vigoriously.
-Refining - Some aspects of your project like tranlations, hotkeys or the gui positioning may need a little polishing up before you feel ready to release them.
-Release - Let the audience see the show! 
-Update - You may not catch all the problems in the earlier stages so here is when we fix them as we, or our users, find them and release an update to solve the problem on the user end.
-Repeat - Keep updating your application.
-
-Describe key concepts, issues and risks when managing IT projects.
-Compare the characteristics of different project management methodologies used by organisations.
-
-Produce a project specification for an IT project in line with requirements.
-Use project management software to plan an IT project.
-
-Use project management software to monitor a project plan and track progress against the plan.
-Carry out a post-project review to determine project outcomes.
-
-
-
-Conception and start up: project mandate, client requirements, and feasibility.
-
-Definition of the project: set up project team, create the Project Initiation Document (PID).
-
-Planning: timescales, costs, quality management, risk management and controls.
-
-Launch and execution: carrying out the plan, monitoring activity, checking progress.
-
-Closure: handover of the product, user acceptance testing, disbanding project team.
-
-Post-project evaluation: reviewing the project against success criteria.
-
-
-
-
-
-
-
- 1 IDEA
- 2 KEY TERMS
+https://www.tutorialspoint.com/management_concepts/project_management_methodologies.htm
